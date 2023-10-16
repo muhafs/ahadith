@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('chapter_id')->constrained();
             $table->string('title');
+            $table->string('title_eng');
             $table->integer('number');
             $table->integer('total_content');
             $table->timestamps();
