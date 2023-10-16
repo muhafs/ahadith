@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
 
-use App\Models\Content;
+namespace App\Http\Controllers\Api;
+
+use App\Models\Section;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class ContentController extends Controller
+class SectionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +28,7 @@ class ContentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Content $content)
+    public function show(Section $section)
     {
         //
     }
@@ -34,7 +36,7 @@ class ContentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Content $content)
+    public function update(Request $request, Section $section)
     {
         //
     }
@@ -42,7 +44,7 @@ class ContentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Content $content)
+    public function destroy(Section $section)
     {
         //
     }

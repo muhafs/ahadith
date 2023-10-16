@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Section;
+use App\Models\Book;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class SectionController extends Controller
+class BookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +27,7 @@ class SectionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Section $section)
+    public function show(Book $book)
     {
         //
     }
@@ -34,7 +35,7 @@ class SectionController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Section $section)
+    public function update(Request $request, Book $book)
     {
         //
     }
@@ -42,7 +43,7 @@ class SectionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Section $section)
+    public function destroy(Book $book)
     {
         //
     }
