@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('section_id')->constrained();
             $table->integer('number');
-            $table->string('hadith');
-            $table->string('matan');
-            $table->string('sanad');
+            $table->text('hadith');
+            $table->text('matan');
+            $table->text('sanad');
             $table->string('tartib');
             $table->timestamps();
         });

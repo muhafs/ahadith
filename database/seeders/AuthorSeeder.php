@@ -24,11 +24,15 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'البخاري',
                 'laqab_eng' => 'al-Bukhari',
 
-                'birth_date' => '20-07-810',
+                'birth_year' => 810,
+                'birth_month' => 7,
+                'birth_day' => 20,
                 'birth_place' => 'بخارى, أوزبكستان',
                 'birth_place_eng' => 'Bukhara, Uzbekistan',
 
-                'death_date' => '01-09-870',
+                'death_year' => 870,
+                'death_month' => 9,
+                'death_day' => 1,
                 'death_place' => 'خوجة إسماعيل, أوزبكستان',
                 'death_place_eng' => 'Xo\'ja Ismoil, Uzbekistan',
 
@@ -44,11 +48,15 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'مسلم',
                 'laqab_eng' => 'Muslim',
 
-                'birth_date' => '01-01-822',
+                'birth_year' => 822,
+                'birth_month' => 1,
+                'birth_day' => 1,
                 'birth_place' => 'نيسابور, إيران',
                 'birth_place_eng' => 'Neyshabur, Iran',
 
-                'death_date' => '06-07-875',
+                'death_year' => 875,
+                'death_month' => 7,
+                'death_day' => 7,
                 'death_place' => 'نصر آباد, إيران',
                 'death_place_eng' => 'Nasarabad, Iran',
 
@@ -64,11 +72,15 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'أبو داود',
                 'laqab_eng' => 'Abu Dawud',
 
-                'birth_date' => '01-01-817',
+                'birth_year' => 817,
+                'birth_month' => 1,
+                'birth_day' => 1,
                 'birth_place' => 'سجستان, إيران',
                 'birth_place_eng' => 'Sijistan, Iran',
 
-                'death_date' => '21-02-889',
+                'death_year' => 889,
+                'death_month' => 2,
+                'death_day' => 21,
                 'death_place' => 'بصرة, عراق',
                 'death_place_eng' => 'Basra, Iraq',
 
@@ -84,11 +96,15 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'النسائي',
                 'laqab_eng' => 'al-Nasa\'i',
 
-                'birth_date' => '01-01-829',
+                'birth_year' => 829,
+                'birth_month' => 1,
+                'birth_day' => 1,
                 'birth_place' => 'نسا, تركمانستان',
                 'birth_place_eng' => 'Nisa, Turkmenistan',
 
-                'death_date' => '28-08-915',
+                'death_year' => 915,
+                'death_month' => 8,
+                'death_day' => 28,
                 'death_place' => 'الرملة, فلسطين',
                 'death_place_eng' => 'Ramla, Palestine',
 
@@ -104,11 +120,15 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'الترمذي',
                 'laqab_eng' => 'al-Tirmidhi',
 
-                'birth_date' => '01-01-824',
+                'birth_year' => 824,
+                'birth_month' => 1,
+                'birth_day' => 1,
                 'birth_place' => 'ترمذ, أوزبكستان',
                 'birth_place_eng' => 'Termez, Uzbekistan',
 
-                'death_date' => '08-10-892',
+                'death_year' => 892,
+                'death_month' => 10,
+                'death_day' => 8,
                 'death_place' => 'ترمذ, أوزبكستان',
                 'death_place_eng' => 'Termez, Uzbekistan',
 
@@ -124,16 +144,24 @@ class AuthorSeeder extends Seeder
                 'laqab' => 'ابن ماجه',
                 'laqab_eng' => 'Ibn Majah',
 
-                'birth_date' => '01-01-824',
+                'birth_year' => 824,
+                'birth_month' => 1,
+                'birth_day' => 1,
                 'birth_place' => 'قزوین, إيران',
                 'birth_place_eng' => 'Qazvin, Iran',
 
-                'death_date' => '20-02-887',
+                'death_year' => 887,
+                'death_month' => 2,
+                'death_day' => 20,
                 'death_place' => 'قزوین, إيران',
                 'death_place_eng' => 'Qazvin, Iran',
 
                 'age' => 63,
             ],
         ];
+
+        foreach ($authors as $author) {
+            Author::create($author);
+        }
     }
 }

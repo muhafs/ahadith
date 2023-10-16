@@ -22,15 +22,19 @@ return new class extends Migration
             $table->string('laqab')->nullable();
             $table->string('laqab_eng')->nullable();
 
-            $table->date('birth_date')->nullable();
+            $table->smallInteger('birth_year')->nullable();
+            $table->tinyInteger('birth_month')->nullable();
+            $table->tinyInteger('birth_day')->nullable();
             $table->string('birth_place')->nullable();
             $table->string('birth_place_eng')->nullable();
 
-            $table->date('death_date')->nullable();
+            $table->smallInteger('death_year')->nullable();
+            $table->tinyInteger('death_month')->nullable();
+            $table->tinyInteger('death_day')->nullable();
             $table->string('death_place')->nullable();
             $table->string('death_place_eng')->nullable();
 
-            $table->integer('age')->nullable();
+            $table->tinyInteger('age')->nullable();
             $table->timestamps();
         });
     }
