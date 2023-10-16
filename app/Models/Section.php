@@ -15,4 +15,9 @@ class Section extends Model
     {
         return $this->belongsTo(Chapter::class);
     }
+
+    public function contents()
+    {
+        return $this->hasMany(Content::class);
+    }
 }
