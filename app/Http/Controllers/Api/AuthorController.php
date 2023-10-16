@@ -13,7 +13,12 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        //
+        // $authors = Author::orderBy('name', 'asc')->get();
+
+        // return response()->json(
+        //     ['authors' => $authors],
+        //     200
+        // );
     }
 
     /**
