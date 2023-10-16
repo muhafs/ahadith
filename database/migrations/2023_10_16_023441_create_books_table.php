@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('title_eng');
             $table->foreignId('author_id')->constrained();
+
+            $table->string('title');
+            $table->string('title_eng')->nullable();
+
             $table->integer('total_chapters')->default(1);
             $table->timestamps();
         });

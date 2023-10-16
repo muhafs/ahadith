@@ -14,11 +14,14 @@ return new class extends Migration
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
             $table->foreignId('section_id')->constrained();
+
             $table->integer('number');
             $table->text('hadith');
+
             $table->text('matan');
             $table->text('sanad');
-            $table->string('tartib');
+
+            $table->string('tartib')->nullable();
             $table->timestamps();
         });
     }

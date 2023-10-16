@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('sections', function (Blueprint $table) {
             $table->id();
             $table->foreignId('chapter_id')->constrained();
-            $table->string('title');
-            $table->string('title_eng');
+
             $table->integer('number');
-            $table->integer('total_content');
+            $table->string('title');
+            $table->string('title_eng')->nullable();
+
+            $table->integer('total_content')->default(1);
             $table->timestamps();
         });
     }
