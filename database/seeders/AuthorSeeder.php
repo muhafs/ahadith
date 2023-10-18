@@ -158,6 +158,54 @@ class AuthorSeeder extends Seeder
 
                 'age' => 63,
             ],
+            [
+                'name' => 'مالك بن أنس بن مالك بن أبي عامر الأصبحي الحميري المدني',
+                'name_eng' => 'Malik ibn Anas ibn Malik ibn Abi Amir al-Asbahi al-Humyari al-Madani',
+
+                'kunyah' => 'أبو عبدااالله',
+                'kunyah_eng' => 'Abu Abdallah',
+
+                'laqab' => 'مالك',
+                'laqab_eng' => 'Malik',
+
+                'birth_year' => 711,
+                'birth_month' => 1,
+                'birth_day' => 1,
+                'birth_place' => 'المدينة المنورة, السعودية',
+                'birth_place_eng' => 'Al-Madinah al-Munawwarah, Saudi Arabia',
+
+                'death_year' => 795,
+                'death_month' => 7,
+                'death_day' => 7,
+                'death_place' => 'المدينة المنورة, السعودية',
+                'death_place_eng' => 'Al-Madinah al-Munawwarah, Saudi Arabia',
+
+                'age' => 84,
+            ],
+            [
+                'name' => 'أحمد بن محمد بن حنبل الشيباني الذهلي',
+                'name_eng' => 'Ahmad ibn Muhammad ibn Hanbal al-Shaybani al-Dhuhli',
+
+                'kunyah' => 'أبو عبدااالله',
+                'kunyah_eng' => 'Abu Abdallah',
+
+                'laqab' => 'ابن حنبل',
+                'laqab_eng' => 'Ibn Hanbal',
+
+                'birth_year' => 780,
+                'birth_month' => 11,
+                'birth_day' => 1,
+                'birth_place' => 'بغداد, عراق',
+                'birth_place_eng' => 'Baghdad, Iraq',
+
+                'death_year' => 855,
+                'death_month' => 8,
+                'death_day' => 2,
+                'death_place' => 'بغداد, عراق',
+                'death_place_eng' => 'Baghdad, Iraq',
+
+                'age' => 75,
+            ],
         ];
 
         foreach ($authors as $author) {
