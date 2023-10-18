@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('title_eng')->nullable();
 
-            $table->integer('total_chapters')->default(1);
             $table->timestamps();
         });
     }
