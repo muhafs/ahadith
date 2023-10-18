@@ -18,8 +18,9 @@ return new class extends Migration
             $table->integer('number');
             $table->text('hadith');
 
-            $table->text('matan');
-            $table->text('sanad');
+            $table->text('sanad')->nullable();
+            $table->text('rawi')->nullable();
+            $table->text('matan')->nullable();
 
             $table->string('tartib')->nullable();
             $table->timestamps();
