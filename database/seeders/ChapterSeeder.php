@@ -216,5 +216,22 @@ class ChapterSeeder extends Seeder
         }
 
         fclose($csvData);
+
+        $csvData = fopen(base_path('local_database/chapters/nasai_chapters.csv'), 'r');
+
+        $chaptersRow = true;
+        while (($data = fgetcsv($csvData, null, ',')) !== false) {
+            if (!$chaptersRow) {
+                Chapter::create([
+                    'number' => $data['0'],
+                    'title' => $data['3'],
+                    'title_eng' => $data['2'],
+                    'book_id' => Book::where('title_eng', $data['4'])->first()->id,
+                ]);
+            }
+            $chaptersRow = false;
+        }
+
+        fclose($csvData);
     }
 }

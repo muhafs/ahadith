@@ -41,7 +41,7 @@ class BookSeeder extends Seeder
             ],
             [
                 'title' => 'سنن النسائي',
-                'title_eng' => 'Sunan al-Nasa\'i',
+                'title_eng' => 'Sunan al-Nasai',
 
                 'author_id' => Author::where('laqab_eng', 'al-Nasa\'i')->first()->id,
             ],
