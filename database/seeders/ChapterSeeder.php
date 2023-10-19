@@ -20,6 +20,8 @@ class ChapterSeeder extends Seeder
             'nasai_chapters',
             'abu_dawud_chapters',
             'tirmidhi_chapters',
+            'ibn_majah_chapters',
+            'muwatta_malik_chapters',
         ];
 
         foreach ($chapters as $chapter) {
